@@ -3,7 +3,7 @@
 #include <fstream>
 using namespace std;
 int st[100],n,nr,a[10];
-char note[10][10]={" ","do","re","mi","fa","so","la","si"};
+char note[10][10]={" ","do","re","mi","fa","sol","la","si"};
 
 void afisare(int k)
 {
@@ -21,7 +21,7 @@ void backtrack(int k)
     else
         {
             st[k]=0;
-            while(st[k]<=k)
+            while(st[k]<7)
             {
                 st[k]++;
                 backtrack(k+1);
